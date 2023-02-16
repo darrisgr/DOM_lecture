@@ -24,12 +24,13 @@ window.addEventListener("load", function() {
     troll.addEventListener("mouseout", function() {
         troll.innerHTML = "Hello there. 🙂"
         body.style.backgroundColor = "";
-        fixer.style.display = "";
+        fixer.style.visibility = "";
     });
 
     fixer.addEventListener("click", function() {
         regrets.disabled = false;
         orange.disabled = false;
         troll.style.fontSize = "13px";
+        fixer.style.visibility = "hidden";
     });
 });
